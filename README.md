@@ -1,6 +1,6 @@
 # Quasar App
 
-Shows the problems when using the extension of quasar-framework @quasar/typescript
+Shows the problems when using the extension of quasar-framework @quasar/typescript with the vue-property-decorator
 
 Steps to reproduce the environment
 1. Create a new quasar empty project with the newest quasar-cli (betav1) 
