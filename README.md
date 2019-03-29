@@ -7,6 +7,6 @@ Steps to reproduce the environment
 > quasar create -b dev
 2. Add the extension @quasar/typescript with the quasar-cli
 > quasar ext add @quasar/typescript
-3. Add the vue-property-decorator dependency
-> yarn add vue-property-decorator
+3. Add the vue-property-decorator and vue-class-component dependency
+> yarn add vue-property-decorator vue-class-component
 4. Modify Index.vue to make use of the decorator syntax
