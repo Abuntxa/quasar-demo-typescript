@@ -11,4 +11,4 @@ Steps to reproduce the environment
 > yarn add vue-property-decorator vue-class-component
 4. Modify src/pages/Index.vue to make use of the decorator syntax (copy paste the vue-property-decorator example)
 
-If I set the typescript code in a separate file and reference it from the template `<script lang="ts" src="Index.ts" />` the problems dissapear.
+If I set the typescript code in a separate file and reference it from the template `<script lang="ts" src="Index.ts" />` the compiling problems dissapear.
