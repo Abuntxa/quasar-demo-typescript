@@ -1,6 +1,6 @@
 # Quasar App
 
-Shows my problems when trying to use the extension of quasar-framework @quasar/typescript with the vue-property-decorator with the template and typescript code in the same file.
+Showed my problems when trying to use the extension of quasar-framework @quasar/typescript with the vue-property-decorator with the template and typescript code in the same file.
 
 Steps to reproduce the environment
 1. Create a new quasar empty project with the newest quasar-cli (betav1) 
@@ -12,3 +12,5 @@ Steps to reproduce the environment
 4. Modify src/pages/Index.vue to make use of the decorator syntax (copy paste the vue-property-decorator example)
 
 If I set the typescript code in a separate file and reference it from the template `<script lang="ts" src="Index.ts" />` the compiling problems dissapear.
+
+## The problem was that the quasar project bootstrap adds an extra build step in order to lint the es6 which gets executed before transpiling the typescript code. Removing the contents from `build.extendWebpack(cfg)` in quasar.conf.js solved the issue.
